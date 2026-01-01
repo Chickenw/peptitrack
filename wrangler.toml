@@ -1,0 +1,7 @@
+name = "peptitrack"
+compatibility_date = "2025-12-31"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "peptitrack-db"
+database_id = "40f7fae4-c21d-46c1-bbc8-90ece3666713"
