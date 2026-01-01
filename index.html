@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PeptiTrack</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Clerk -->
+  <script
+    async
+    crossorigin="anonymous"
+    data-clerk-publishable-key="%CLERK_PUBLISHABLE_KEY%"
+    src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest/dist/clerk.browser.js">
+  </script>
+</head>
+<body>
+
+  <!-- Auth UI -->
+  <div id="auth-root"></div>
+
+  <!-- App UI (hidden until signed in) -->
+  <div id="app-root" style="display:none;">
+    <header>
+      <h1>PeptiTrack</h1>
+      <button id="signOutBtn">Sign out</button>
+    </header>
+
+    <!-- Your existing tabs / content -->
+    <nav class="tabs">
+      <button data-tab="meds">Meds</button>
+      <button data-tab="log">Log Dose</button>
+      <button data-tab="history">History</button>
+    </nav>
+
+    <main id="tab-content">
+      <!-- You already render tabs here -->
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
