@@ -1,6 +1,9 @@
 name = "peptitrack"
 compatibility_date = "2025-12-31"
 
+# Cloudflare Pages needs this to treat wrangler.toml as Pages config
+pages_build_output_dir = "."
+
 [[d1_databases]]
 binding = "DB"
 database_name = "peptitrack-db"
